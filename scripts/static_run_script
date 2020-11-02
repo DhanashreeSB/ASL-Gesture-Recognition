@@ -1,0 +1,13 @@
+1. Go to virtualenv directory
+($cd gest)=>if virtualenv directory name is "gest"
+2. $source bin/activate
+3. $FLASK_APP=predict_all_gpu.py
+(Put "predict_all_gpu.py" file in gest/ directory)
+4. $flask run --host=0.0.0.0
+5. Open all_gpu_final.html in chrome
+6. Click on start button to start the prediction.
+7. Keep the gesture for at least 5 secs in rectangular box.
+8. When you do the gesture for space then Word will be printed in the textarea below label WORD on webapp.
+
+
+NOTE : j and z are excluded while training as they are dynamic gestures and cant be trained with static gestures.

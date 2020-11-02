@@ -1,0 +1,22 @@
+CREATE FIREWALL RULE and add 
+1. my ip
+2. ifconfig
+in firewall rule
+
+OPEN TERMINAL OF CLOUD INSTANCE
+
+1. cd virtualenv/static/
+2. source bin/activate
+3. cd flask_app/
+4. export FLASK_APP=predict_all_gpu.py
+5. flask run --host=0.0.0.0
+
+OPEN ONE MORE TERMINAL ON CLOUD
+
+1. cd virtualenv/dynamic/
+2. source bin/activate
+3. cd flask_app/
+4. export FLASK_APP=predict_vid.py
+5. flask run --host=0.0.0.0 --port=8000
+
+RUN gestrecog.html on YOUR LOCAL MACHINE
